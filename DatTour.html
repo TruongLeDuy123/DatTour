@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DatTour.css">
+    <script src="DatTour.js"></script>
+</head>
+<body>
+    <form action="xulidattour.php" method="post" name="frmDatTour" id="frmDatTour" onSubmit="return ValidForm()">
+        <h1>ĐĂNG KÝ DU LỊCH</h1>
+        <table>
+            <tr>
+                <td class="name">Họ tên</td>
+                <td><input type="text" name="na" id="txtHoTen" value="" size="35" maxlength="50" class="Name"></td>
+            </tr>
+
+            <tr>
+                <td class="address">Địa chỉ</td>
+                <td> 
+                    <form name="nhap">
+                        <textarea cols="50" rows="5" class="add" id="txtDiaChi" value=""></textarea>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="dt">Điện thoại</td>
+                <td><input type="text" name="" id="txtDt" value="" size="20" maxlength="30" class="phone"></td>
+            </tr>
+
+            <tr>
+                <td class="tourist">Khách Việt Nam</td>
+                <td><input type="checkbox" name="phai" id="nam"><label for="nam"></label></td>
+            </tr>
+
+            <tr>
+                <td class="tour">Chọn tour</td>
+                <td>
+                    <select id="chontour" style="width:250px">
+                        <optgroup label="Miền Bắc">
+                            <option value="1">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="3">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                            <optgroup label="Miền Trung">
+                            <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="5">Nha Trang - Đà Lạt</option>
+                            <option value="6">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                            <optgroup label="Miền Nam">
+                            <option value="7">TpHCM - Cần Thơ - Cà Mau</option>
+                            <option value="8">Phú Quốc - Côn Đảo</option>
+                            </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="transport">Phương tiện</td>
+                <td class="male">
+                    <input type="radio" name="phai" id="plane"><label for="nam">Máy bay</label>
+                    <input type="radio" name="phai" id="car"><label for="nu">Xe du lịch</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center" style="height: 80px">
+                    <fieldset style="width:500px;height: 40px;text-align:left;color: blue">
+                        <legend>Số lượng đoàn khách</legend>
+                        Người lớn <input style="width: 100px;" value="" id="nguoi_lon" type="text" size="10" maxlength="15" />
+                        Trẻ em <input id="tre_em" type="text" value="" size="10" maxlength="15" />
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="note">Ghi chú thêm</td>
+                <td>
+                    <form name="nhap">
+                        <textarea cols="50" rows="5" class="Note" id="txtNote" value=""></textarea>
+                    </form>
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" name="btnDangKy" value="Đồng ý" id="sub" class="regis">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <label id="thongbao"></label>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

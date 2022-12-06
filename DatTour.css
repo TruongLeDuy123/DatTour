@@ -1,0 +1,77 @@
+table
+{
+    width: 50%;
+    border: 1px solid blue;
+    margin: auto;
+    background-color: rgba(225, 225, 104, 0.7);
+    border-collapse: collapse;
+}
+
+td
+{
+    width: 20%;  
+    border-collapse: collapse;
+    border: 1px solid blue;
+}
+
+h1
+{
+    text-align: center;
+    color: blue;
+}
+
+.name, .address, .dt, .tourist, .tour, .transport, .note
+{
+    padding-left: 10px;
+    padding-top: 1px;
+    color: blue;
+}
+
+.Name, .add, .phone, #chontour, #nam, .Note
+{
+    margin-left: 5px;
+    margin-top: 9px;
+    height: 22px;
+    margin-bottom: 10px;
+
+}
+
+.add
+{
+    height: 80px;
+}
+
+.Note
+{
+    height: 50px;
+}
+
+#nam
+{
+    width: 15px;
+}
+
+.male
+{
+    height: 55px;
+}
+
+.regis
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p
+{
+    color: #CD2626;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+#thongbao
+{
+    color: #B90003;
+    font-style: italic;
+}
